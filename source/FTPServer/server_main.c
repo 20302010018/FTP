@@ -70,5 +70,7 @@ int main() {
 
 
 	server();
+    //remove("2.docx");
+    //rmdir("中文中文");
 	return 0;
 }
