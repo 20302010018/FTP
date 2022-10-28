@@ -9,4 +9,4 @@ link_libraries(ws2_32 wsock32)
 add_executable(FTP_Project
         source/FTPClient/client.c
         source/FTPClient/ftp_def.h
-        source/FTPServer/server.c)
+        source/FTPServer/server.c source/FTPServer/server.h source/FTPServer/server_main.c)

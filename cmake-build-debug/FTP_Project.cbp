@@ -87,6 +87,12 @@
 		<Unit filename="D:/coding/computer_network/FTP/source/FTPServer/server.c">
 			<Option target="FTP_Project"/>
 		</Unit>
+		<Unit filename="D:/coding/computer_network/FTP/source/FTPServer/server.h">
+			<Option target="FTP_Project"/>
+		</Unit>
+		<Unit filename="D:/coding/computer_network/FTP/source/FTPServer/server_main.c">
+			<Option target="FTP_Project"/>
+		</Unit>
 		<Unit filename="D:/coding/computer_network/FTP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

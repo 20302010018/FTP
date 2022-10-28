@@ -176,6 +176,30 @@ source/FTPServer/server.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FTP_Project.dir\build.make CMakeFiles/FTP_Project.dir/source/FTPServer/server.c.s
 .PHONY : source/FTPServer/server.c.s
 
+source/FTPServer/server_main.obj: source/FTPServer/server_main.c.obj
+.PHONY : source/FTPServer/server_main.obj
+
+# target to build an object file
+source/FTPServer/server_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FTP_Project.dir\build.make CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.obj
+.PHONY : source/FTPServer/server_main.c.obj
+
+source/FTPServer/server_main.i: source/FTPServer/server_main.c.i
+.PHONY : source/FTPServer/server_main.i
+
+# target to preprocess a source file
+source/FTPServer/server_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FTP_Project.dir\build.make CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.i
+.PHONY : source/FTPServer/server_main.c.i
+
+source/FTPServer/server_main.s: source/FTPServer/server_main.c.s
+.PHONY : source/FTPServer/server_main.s
+
+# target to generate assembly for a file
+source/FTPServer/server_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FTP_Project.dir\build.make CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.s
+.PHONY : source/FTPServer/server_main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... source/FTPServer/server.obj
 	@echo ... source/FTPServer/server.i
 	@echo ... source/FTPServer/server.s
+	@echo ... source/FTPServer/server_main.obj
+	@echo ... source/FTPServer/server_main.i
+	@echo ... source/FTPServer/server_main.s
 .PHONY : help
 
 

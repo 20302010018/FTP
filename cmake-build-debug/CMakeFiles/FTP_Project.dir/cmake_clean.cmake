@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FTP_Project.dir/source/FTPClient/client.c.obj.d"
   "CMakeFiles/FTP_Project.dir/source/FTPServer/server.c.obj"
   "CMakeFiles/FTP_Project.dir/source/FTPServer/server.c.obj.d"
+  "CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.obj"
+  "CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.obj.d"
   "FTP_Project.exe"
   "FTP_Project.exe.manifest"
   "FTP_Project.pdb"

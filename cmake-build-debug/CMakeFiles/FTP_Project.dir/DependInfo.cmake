@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/coding/computer_network/FTP/source/FTPClient/client.c" "CMakeFiles/FTP_Project.dir/source/FTPClient/client.c.obj" "gcc" "CMakeFiles/FTP_Project.dir/source/FTPClient/client.c.obj.d"
   "D:/coding/computer_network/FTP/source/FTPServer/server.c" "CMakeFiles/FTP_Project.dir/source/FTPServer/server.c.obj" "gcc" "CMakeFiles/FTP_Project.dir/source/FTPServer/server.c.obj.d"
+  "D:/coding/computer_network/FTP/source/FTPServer/server_main.c" "CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.obj" "gcc" "CMakeFiles/FTP_Project.dir/source/FTPServer/server_main.c.obj.d"
   )
 
 # Targets to which this target links.
