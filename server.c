@@ -7,7 +7,7 @@
 #pragma  comment(lib,"WS2_32.lib")
 #define TRUE 1
 #define FALSE 0
-#define AF_INET 2
+//#define AF_INET 2
 
 SOCKET creat_socket(int nServerPort);
 int process_msg(SOCKET sAccept);
