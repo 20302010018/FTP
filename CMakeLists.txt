@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
-project(FTP_Project C)
+project(FTPtest)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
+link_libraries(ws2_32 wsock32)
 
-include_directories(source/FTPClient)
-
-add_executable(FTP_Project
-        source/FTPClient/client.c
-        source/FTPClient/ftp_def.h
-        source/FTPServer/server.c)
+add_executable(FTPtest server.c ftp_def.h)

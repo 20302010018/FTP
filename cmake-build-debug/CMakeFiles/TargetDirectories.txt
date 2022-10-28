@@ -1,3 +1,3 @@
-D:/coding/computer_network/FTP/cmake-build-debug/CMakeFiles/FTP_Project.dir
-D:/coding/computer_network/FTP/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/coding/computer_network/FTP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/C++/Coding/FTP_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/C++/Coding/FTP_Project/cmake-build-debug/CMakeFiles/FTPtest.dir
+C:/C++/Coding/FTP_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
