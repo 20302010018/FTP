@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FTP_Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/coding/computer_network/FTP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FTP_Project">
+				<Option output="D:/coding/computer_network/FTP/cmake-build-debug/FTP_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/coding/computer_network/FTP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/coding/computer_network/FTP/source/FTPClient"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="/mingw/lib/gcc/mingw32/9.2.0/../../../../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 FTP_Project"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FTP_Project/fast">
+				<Option output="D:/coding/computer_network/FTP/cmake-build-debug/FTP_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/coding/computer_network/FTP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/coding/computer_network/FTP/source/FTPClient"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="/mingw/lib/gcc/mingw32/9.2.0/../../../../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 FTP_Project/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/coding/computer_network/FTP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/coding/computer_network/FTP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/coding/computer_network/FTP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/coding/computer_network/FTP/source/FTPClient/client.c">
+			<Option target="FTP_Project"/>
+		</Unit>
+		<Unit filename="D:/coding/computer_network/FTP/source/FTPClient/ftp_def.h">
+			<Option target="FTP_Project"/>
+		</Unit>
+		<Unit filename="D:/coding/computer_network/FTP/source/FTPServer/server.c">
+			<Option target="FTP_Project"/>
+		</Unit>
+		<Unit filename="D:/coding/computer_network/FTP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
