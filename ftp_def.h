@@ -1,7 +1,7 @@
 #ifndef FTP_DEF
 #define FTP_DEF 
-#define PORT_CONTROL_MESSAGE 20
-#define PORT_DATA 21
+#define PORT_CONTROL_MESSAGE 21
+#define PORT_DATA 20
 #define BYTE_LENGTH 1024
 const int N = 50;
 const char* HELP = "help";
