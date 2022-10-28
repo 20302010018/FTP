@@ -38,11 +38,14 @@ int server(){
     SOCKET socket_client = accept(sock_fd,(struct sockaddr*)&client,&len);
 
     char buf1[1024];
+    memset(buf1,0,sizeof(buf1));
     printf("scanf any word\n");
     scanf("%s",buf1);
     send(socket_client,buf1,sizeof(buf1),0);
     closesocket(socket_client);
     closesocket(sock_fd);
+
+    //CreateDirectory()
 
 
 }
