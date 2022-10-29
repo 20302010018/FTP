@@ -168,11 +168,34 @@ int process_msg(SOCKET sCliControl, SOCKET sData){
         char file_data[BYTE_LENGTH]={0};
         open_file(filename,"wb");
         while (recv(sCliData,file_data,BYTE_LENGTH,0) ){
-            printf("正在recv");
+            printf("recv ");
             write_to_file(file_data,BYTE_LENGTH);
             memset(file_data,0,BYTE_LENGTH);
         }
         send(sCliControl,"file put complete",BYTE_LENGTH,0);
+        close_file();
+
+        closesocket(sCliData);
+        return TRUE;
+
+    }else if (buff[0] == 'g')//**************************   get
+    {
+        SOCKET sCliData = listen_and_connect(sData);// PORT DATA端口监听并连接
+        printf("receive get");
+        /**
+        TODO
+        */
+        //Assume that the put is followed by a space and a file name,no other space.
+        char filename[BYTE_LENGTH];
+        strncpy(filename,buff+4,BYTE_LENGTH);
+        char file_data[BYTE_LENGTH]={0};
+        open_file(filename,"rb");
+        while (read_from_file(file_data,BYTE_LENGTH) ){
+            printf("send ");
+            send(sCliData,file_data,BYTE_LENGTH,0);
+            memset(file_data,0,BYTE_LENGTH);
+        }
+        send(sCliControl,"file get complete",BYTE_LENGTH,0);
         close_file();
 
         closesocket(sCliData);
