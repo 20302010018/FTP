@@ -167,9 +167,10 @@ int process_msg(SOCKET sCliControl, SOCKET sData){
         strncpy(filename,buff+4,BYTE_LENGTH);
         char file_data[BYTE_LENGTH]={0};
         open_file(filename,"wb");
-        while (recv(sCliData,file_data,BYTE_LENGTH,0) > 0){
+        while (recv(sCliData,file_data,BYTE_LENGTH,0) ){
             printf("正在recv");
             write_to_file(file_data,BYTE_LENGTH);
+            memset(file_data,0,BYTE_LENGTH);
         }
         send(sCliControl,"file put complete",BYTE_LENGTH,0);
         close_file();

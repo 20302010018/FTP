@@ -105,7 +105,9 @@ CMakeFiles/FTPtest.dir/server.c.obj: ../server.c \
   C:/MinGW/include/sys/bsdtypes.h \
   C:/MinGW/include/sys/time.h \
   C:/MinGW/include/nspapi.h \
-  C:/MinGW/include/wtypes.h
+  C:/MinGW/include/wtypes.h \
+  ../file/ls.h \
+  ../file/file_class.h
 
 
 ../file/file_class.c:
@@ -261,3 +263,7 @@ C:/MinGW/include/oleidl.h:
 C:/MinGW/include/sys/time.h:
 
 C:/MinGW/include/nspapi.h:
+
+../file/ls.h:
+
+../file/file_class.h:
