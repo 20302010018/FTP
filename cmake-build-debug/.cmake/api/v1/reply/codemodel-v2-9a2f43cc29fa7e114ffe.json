@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FTPtest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FTPtest-Debug-4bf51ba8317e992ce1e2.json",
+					"jsonFile" : "target-FTPtest-Debug-16202331a26239477903.json",
 					"name" : "FTPtest",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/C++/Coding/FTP_Project/cmake-build-debug",
-		"source" : "C:/C++/Coding/FTP_Project"
+		"build" : "D:/coding/computer_network/net_project/cmake-build-debug",
+		"source" : "D:/coding/computer_network/net_project"
 	},
 	"version" : 
 	{

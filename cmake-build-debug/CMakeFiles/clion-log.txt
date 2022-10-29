@@ -1,4 +1,4 @@
-"C:\Jetbrains\Clion\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Jetbrains/Clion/CLion 2021.3.3/bin/ninja/win/ninja.exe" -DCMAKE_C_COMPILER=C:/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/mingw64/bin/g++.exe -G Ninja C:\C++\Coding\FTP_Project
+"D:\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\coding\computer_network\net_project
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/C++/Coding/FTP_Project/cmake-build-debug
+-- Build files have been written to: D:/coding/computer_network/net_project/cmake-build-debug

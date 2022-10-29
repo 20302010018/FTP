@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "ftp_def.h"
-#pragma once
+//#pragma once
 #include <winsock2.h>
 #include <stdlib.h>
 #include <string.h>
+#include "file/ls.h"
+#include "file/file_class.h"
 #pragma  comment(lib,"WS2_32.lib")
 #define TRUE 1
 #define FALSE 0
@@ -14,7 +16,7 @@ SOCKET listen_and_connect(SOCKET sPort);
 int process_msg(SOCKET sCliControl, SOCKET sData);
 
 int main() {
-
+    printf("1114514");
     // 启动socket库
     WSADATA wsadata;
 
@@ -74,7 +76,7 @@ SOCKET creat_socket(int nServerPort){
 
     addr.sin_family=AF_INET;
     addr.sin_port=htons(nServerPort);
-    addr.sin_addr.S_un.S_addr=htonl(INADDR_ANY);
+    addr.sin_addr.S_un.S_addr=inet_addr("127.0.0.1");
 
     if(SOCKET_ERROR == bind(socket1,(SOCKADDR*)&addr,sizeof(addr)))
     {
@@ -131,6 +133,10 @@ int process_msg(SOCKET sCliControl, SOCKET sData){
         /**
         TODO
         */
+        char ls_store[BYTE_LENGTH];
+        ls(ls_store,BYTE_LENGTH);
+
+        send(sCliData,ls_store,BYTE_LENGTH,0);
 
         closesocket(sCliData);
         return TRUE;
@@ -152,10 +158,21 @@ int process_msg(SOCKET sCliControl, SOCKET sData){
     }else if (buff[0] == 'p')//**************************   put
     {
         SOCKET sCliData = listen_and_connect(sData);// PORT DATA端口监听并连接
-
+        printf("receive put");
         /**
         TODO
         */
+        //Assume that the put is followed by a space and a file name,no other space.
+        char filename[BYTE_LENGTH];
+        strncpy(filename,buff+4,BYTE_LENGTH);
+        char file_data[BYTE_LENGTH]={0};
+        open_file(filename,"wb");
+        while (recv(sCliData,file_data,BYTE_LENGTH,0) > 0){
+            printf("正在recv");
+            write_to_file(file_data,BYTE_LENGTH);
+        }
+        send(sCliControl,"file put complete",BYTE_LENGTH,0);
+        close_file();
 
         closesocket(sCliData);
         return TRUE;
