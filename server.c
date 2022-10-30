@@ -31,7 +31,7 @@ int main() {
     if (0 != WSAStartup(MAKEWORD(2, 2), &wsadata))  // 启动协议,成功返回0
     {
         printf("WSAStartup faild: %d\n", WSAGetLastError());
-        system("pause");
+        //system("pause");
         return -1;
     }
     printf("Server startup...\n");
@@ -60,11 +60,11 @@ int main() {
     if (0 != WSACleanup())
     {
         printf("WSACleanup failed in %d\n", WSAGetLastError());
-        system("pause");
+        //system("pause");
         return -1;
     }
     printf("Server shutdown...\n");
-    system("pause");
+    //system("pause");
 
     return 0;
 }
@@ -76,7 +76,7 @@ SOCKET creat_socket(int nServerPort){
     {
         //失败
         printf("Fail to create socket on %d\n",nServerPort);
-        system("pause");
+        //("pause");
         return SOCKET_ERROR;
     }
 
@@ -90,7 +90,7 @@ SOCKET creat_socket(int nServerPort){
     {
         //失败
         printf("Fail to bind socket\n");
-        system("pause");
+        //system("pause");
         return SOCKET_ERROR;
     }
 
