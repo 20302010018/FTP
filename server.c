@@ -1,9 +1,17 @@
 #include <stdio.h>
-#include "ftp_def.h"
 //#pragma once
+#ifdef _WIN32
 #include <winsock2.h>
+#elif _linux_
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <unistd.h>
+#include<sys/types.h>
+#include <fcntl.h>
+#endif
 #include <stdlib.h>
 #include <string.h>
+#include "ftp_def.h"
 #include "file/ls.h"
 #include "file/file_class.h"
 #pragma  comment(lib,"WS2_32.lib")

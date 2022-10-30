@@ -6,7 +6,6 @@ CMakeFiles/FTPtest.dir/server.c.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\stddef.h \
  c:\mingw\include\sys/types.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\stdarg.h \
- D:\coding\computer_network\net_project\ftp_def.h \
  c:\mingw\include\winsock2.h c:\mingw\include\winsock.h \
  c:\mingw\include\windows.h c:\mingw\include\windef.h \
  c:\mingw\include\winnt.h c:\mingw\include\winerror.h \
@@ -38,5 +37,6 @@ CMakeFiles/FTPtest.dir/server.c.obj: \
  c:\mingw\include\oaidl.h c:\mingw\include\oleidl.h \
  c:\mingw\include\sys\bsdtypes.h c:\mingw\include\sys\time.h \
  c:\mingw\include\nspapi.h c:\mingw\include\wtypes.h \
+ D:\coding\computer_network\net_project\ftp_def.h \
  D:\coding\computer_network\net_project\file/ls.h \
  D:\coding\computer_network\net_project\file/file_class.h
